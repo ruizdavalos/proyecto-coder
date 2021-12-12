@@ -1,0 +1,20 @@
+body{
+    background-image: url(/img/decoracion/floresVerdes.jpg);
+    font-size: 62.5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center;
+
+        /* WHATSAPP */
+        .whatsapp{
+            position: fixed;
+            right: 5%;
+            bottom: 10%;
+            width: 50px;
+            &:hover{
+                transition: all 1s;
+                transform: rotate(380deg) scale(2) ;
+            }
+        }
+}

@@ -1,0 +1,98 @@
+
+
+/* Inicio Main */
+/* main{
+    display: block;
+    position: absolute;
+    z-index: 1;
+} */
+    .containerImg{
+        padding-top: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;  
+        margin: 0 auto;
+        background-size: contain;
+    
+        img{
+            background-position: center center;
+            width: 100%;
+            border-radius: 1rem;
+        }
+    }
+
+    .h2MacetasContainer{
+        display: flex;
+        justify-content: center;
+        color: var(--colorEnlaces);
+        font-size:var(--fontsLow);
+        margin: 10rem 0 0 0;
+        h2{
+            @media only screen and (max-width:475px){
+                    font-size: var(--fontsLow);
+            }
+        }
+    }
+
+   /* INICIO TITULO DESCARGA */
+    
+    .descargasContainer{
+        display: flex;
+        justify-content: center;
+        a{
+            color: var(--colorEnlaces);
+            font-size: var(--fontsMediun);
+            font-weight: bolder;
+            @media only screen and (max-width:580px){
+                font-size: var(--fontsLow);
+            }
+        }
+    }
+    /* FIN TITULO DESCARGA */
+    /* INICIO FORMULARIO /UBICACION */
+
+    .sectionMapaContainer{
+        display: flex;
+        justify-content:space-evenly ;
+        padding: 3rem;
+        background-color: transparent;
+        @media only screen and (max-width:790px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        h2{
+            color: var(--colorEnlaces);
+            font-size: var(--fontsLow);
+            font-weight: bolder;
+            text-align: center;
+        }
+        .formContainer{
+            text-align: center;
+            width: 25%;
+            .textFormContainer{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                @media only screen and (max-width:790px){
+                        margin-top: 2rem;
+                        width: 12rem;
+                        display: flex;
+                        margin-left: -4.1rem;
+                }                
+                input, textarea{
+                    margin-top: 1rem;
+                    border-radius: 1rem;
+                    width: 100%;
+                }
+                .boton{
+                    width: 10rem;
+                }
+            }
+        }
+    }
+    /* FIN FORMULARIO /UBICACION */
+
+    /* FIN MAIN */
+

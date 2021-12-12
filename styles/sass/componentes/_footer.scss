@@ -1,0 +1,27 @@
+
+
+/* INICIO FOOTER */
+
+footer{
+    background: linear-gradient(86.91deg,#eac5bfc7 -21.79%,rgba(234, 197, 191, 0.795) -5.84%,rgba(210, 230, 237, 0.795) 8.03%,rgba(249, 217, 187, 0.781) 16.55%,rgba(215, 218, 208, 0.788) 22.66%,rgba(196, 231, 244, 0.808) 33.96%,rgba(237, 242, 237, 0.801) 46.53%,rgba(248, 237, 235, 0.822) 53.86%,rgba(224, 238, 243, 0.801) 64.68%,rgba(244, 230, 216, 0.829) 76.21%,rgba(228, 243, 247, 0.815) 86.49%,rgba(244, 228, 221, 0.788) 93.48%);
+    justify-content: center;
+    margin-top: 8rem;
+    padding: 5rem;
+
+
+    .container{
+        .row{
+            .col{
+                h3{
+                    color: red;
+                }
+                p{
+                    a{
+                        text-decoration: none;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,443 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Irish+Grover&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Irish+Grover&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  max-width: 100%;
+}
+
+:root {
+  --colorEnlaces: #ffff00;
+  --color2: rgb(182, 245, 10);
+  --color3:#404047 ;
+  --colorFondoP: #404047b0 ;
+  --fontsXs:0.8rem;
+  --fontsLow: 1rem;
+  --fontsMediun:1.2rem;
+  --fontsHigh:1.6rem;
+  --hoverEnlaces: bolder;
+  --fontFamily:"Irish Grover", cursive;
+  --fontFamilyT:"Libre Baskerville", serif;
+  --colorBujia: #2d3323ab;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  max-width: 100%;
+}
+
+:root {
+  --colorEnlaces: #ffff00;
+  --color2: rgb(182, 245, 10);
+  --color3:#404047 ;
+  --colorFondoP: #404047b0 ;
+  --fontsXs:0.8rem;
+  --fontsLow: 1rem;
+  --fontsMediun:1.2rem;
+  --fontsHigh:1.6rem;
+  --hoverEnlaces: bolder;
+  --fontFamily:"Irish Grover", cursive;
+  --fontFamilyT:"Libre Baskerville", serif;
+  --colorBujia: #2d3323ab;
+}
+
+/* INICIO DEL HEADER */
+/* header{
+    display: block;
+    padding-bottom: 10px;
+    position: absolute;
+    top: 0;
+} */
+.headerContainer {
+  background-color: var(--color3);
+  position: fixed;
+  margin: 0 auto;
+  padding: 1%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: auto;
+  z-index: 1;
+}
+.headerContainer h1 {
+  /* word-break: break-all;  para que bajen de a una las letras */
+  /* box-shadow: rgb(0 0 0 / 50%) 12px 15px 13px;  para darle sombras a las cajas*/
+  font-size: var(--fontsHigh);
+  font-family: var(--fontFamily);
+  color: var(--colorEnlaces);
+  width: 25%;
+  margin: 1rem auto;
+}
+@media only screen and (max-width: 680px) {
+  .headerContainer h1 {
+    font-size: var(--fontsLow);
+    padding: 0.5rem;
+    margin: 0 0 1rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+.headerContainer .boxContainer {
+  width: 30%;
+  height: 10%;
+  margin: 1rem 10%;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 680px) {
+  .headerContainer .boxContainer {
+    display: none;
+  }
+}
+.headerContainer .boxContainer input {
+  width: 100%;
+  padding: 2%;
+  border-radius: 100px;
+}
+.headerContainer .iconosContainer {
+  width: 22%;
+  display: flex;
+}
+@media only screen and (max-width: 680px) {
+  .headerContainer .iconosContainer {
+    display: flex;
+    justify-content: flex-end;
+    display: none;
+  }
+}
+.headerContainer .iconosContainer .iconosHeader {
+  margin: 0 auto;
+  display: flex;
+  flex: content;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.headerContainer .iconosContainer .iconosHeader h2 {
+  color: var(--colorEnlaces);
+  font-size: var(--fontsLow);
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .headerContainer .iconosContainer .iconosHeader h2 {
+    font-size: var(--fontsXs);
+  }
+}
+.headerContainer .iconosContainer .iconosHeader a {
+  margin: 0 0 1rem 0;
+}
+.headerContainer .iconosContainer .iconosHeader a img {
+  width: 40px;
+}
+.headerContainer .navContainer {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.headerContainer .navContainer ul {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0;
+}
+@media only screen and (max-width: 680px) {
+  .headerContainer .navContainer ul {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .headerContainer .navContainer ul {
+    margin: 0 3rem;
+    width: 100%;
+  }
+}
+.headerContainer .navContainer ul a {
+  color: var(--colorEnlaces);
+  font-size: var(--fontsMediun);
+  font-family: var(--fontFamilyT);
+  transition: all 1s;
+  text-decoration: none;
+}
+.headerContainer .navContainer ul a:hover {
+  color: black;
+  font-weight: var(--hoverEnlaces);
+  border-radius: 50%;
+  padding: 0.5%;
+  background-color: var(--colorEnlaces);
+}
+@media only screen and (max-width: 680px) {
+  .headerContainer .navContainer ul a {
+    font-size: var(--fontsXs);
+  }
+}
+
+/*FIN DE HEADER */
+body {
+  background-image: url(/img/decoracion/floresVerdes.jpg);
+  font-size: 62.5%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  /* WHATSAPP */
+}
+body .whatsapp {
+  position: fixed;
+  right: 5%;
+  bottom: 10%;
+  width: 50px;
+}
+body .whatsapp:hover {
+  transition: all 1s;
+  transform: rotate(380deg) scale(2);
+}
+
+/* Inicio Main */
+/* main{
+    display: block;
+    position: absolute;
+    z-index: 1;
+} */
+.containerImg {
+  padding-top: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  background-size: contain;
+}
+.containerImg img {
+  background-position: center center;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.h2MacetasContainer {
+  display: flex;
+  justify-content: center;
+  color: var(--colorEnlaces);
+  font-size: var(--fontsLow);
+  margin: 10rem 0 0 0;
+}
+@media only screen and (max-width: 475px) {
+  .h2MacetasContainer h2 {
+    font-size: var(--fontsLow);
+  }
+}
+
+/* INICIO TITULO DESCARGA */
+.descargasContainer {
+  display: flex;
+  justify-content: center;
+}
+.descargasContainer a {
+  color: var(--colorEnlaces);
+  font-size: var(--fontsMediun);
+  font-weight: bolder;
+}
+@media only screen and (max-width: 580px) {
+  .descargasContainer a {
+    font-size: var(--fontsLow);
+  }
+}
+
+/* FIN TITULO DESCARGA */
+/* INICIO FORMULARIO /UBICACION */
+.sectionMapaContainer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3rem;
+  background-color: transparent;
+}
+@media only screen and (max-width: 790px) {
+  .sectionMapaContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.sectionMapaContainer h2 {
+  color: var(--colorEnlaces);
+  font-size: var(--fontsLow);
+  font-weight: bolder;
+  text-align: center;
+}
+.sectionMapaContainer .formContainer {
+  text-align: center;
+  width: 25%;
+}
+.sectionMapaContainer .formContainer .textFormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (max-width: 790px) {
+  .sectionMapaContainer .formContainer .textFormContainer {
+    margin-top: 2rem;
+    width: 12rem;
+    display: flex;
+    margin-left: -4.1rem;
+  }
+}
+.sectionMapaContainer .formContainer .textFormContainer input, .sectionMapaContainer .formContainer .textFormContainer textarea {
+  margin-top: 1rem;
+  border-radius: 1rem;
+  width: 100%;
+}
+.sectionMapaContainer .formContainer .textFormContainer .boton {
+  width: 10rem;
+}
+
+/* FIN FORMULARIO /UBICACION */
+/* FIN MAIN */
+/* INICIO SECTION PRODUCTOS */
+.sectionContainer {
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100rem;
+  width: 90%;
+  margin: 10rem auto;
+}
+.sectionContainer .productosContainer {
+  width: 20rem;
+  margin: 2rem;
+  background-color: var(--color3);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.sectionContainer .productosContainer:hover {
+  border: solid 4px green;
+  position: relative;
+  bottom: 10px;
+}
+.sectionContainer .productosContainer .fotoContainer img {
+  background-size: cover;
+  width: 100%;
+  border-radius: 1rem;
+}
+.sectionContainer .productosContainer h2 {
+  text-align: center;
+  font-family: var(--fontFamilyT);
+  font-size: var(--fontsMediun);
+  color: var(--colorEnlaces);
+  margin: 0.5em;
+}
+.sectionContainer .productosContainer p {
+  font-size: var(--fontsLow);
+  color: var(--color2);
+  text-align: center;
+  margin: auto 10px;
+}
+
+/*FIN SECTION PRODUCTOS*/
+/* INICIO ARTICLE CAROUSEL */
+article {
+  margin: 12rem auto;
+}
+article .kCarouselContainer {
+  background-color: var(--colorFondoP);
+  border-radius: 1rem;
+  margin: 10 rem auto;
+}
+article .kCarouselContainer img {
+  margin: 1rem auto;
+  border-radius: 1rem;
+}
+article .kCarouselContainer H3 {
+  color: var(--colorEnlaces);
+  text-align: center;
+  margin: 1rem auto;
+}
+article .kCarouselContainer .kParrafoContainer {
+  color: var(--color2);
+  font-weight: lighter;
+  margin: 2rem 1rem;
+}
+
+/* FIN CAROUSEL / TIERRA */
+/* INICIO FOOTER */
+footer {
+  background: linear-gradient(86.91deg, #eac5bfc7 -21.79%, rgba(234, 197, 191, 0.795) -5.84%, rgba(210, 230, 237, 0.795) 8.03%, rgba(249, 217, 187, 0.781) 16.55%, rgba(215, 218, 208, 0.788) 22.66%, rgba(196, 231, 244, 0.808) 33.96%, rgba(237, 242, 237, 0.801) 46.53%, rgba(248, 237, 235, 0.822) 53.86%, rgba(224, 238, 243, 0.801) 64.68%, rgba(244, 230, 216, 0.829) 76.21%, rgba(228, 243, 247, 0.815) 86.49%, rgba(244, 228, 221, 0.788) 93.48%);
+  justify-content: center;
+  margin-top: 8rem;
+  padding: 5rem;
+}
+footer .container .row .col h3 {
+  color: red;
+}
+footer .container .row .col p a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Creando grid */
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  grid-area: 1/1/2/6;
+  border: 5px solid black;
+  height: 200px;
+  max-width: 80%;
+  gap: 2rem;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  background: #0c0b0b;
+  opacity: 0.8;
+  padding: 20px 0px;
+}
+
+.div2 {
+  grid-area: 2/1/6/2;
+}
+
+.div3 {
+  grid-area: 2/2/3/6;
+  display: flex;
+  margin: 0;
+  gap: 2rem;
+  margin-top: 20px;
+  border: 2px solid black;
+  padding-bottom: 10px;
+  flex-wrap: wrap;
+  max-width: 100%;
+  color: white;
+}
+.div3 .card {
+  padding: 10px 10px;
+}
+
+.div4 {
+  grid-area: 3/2/4/6;
+}
+
+.div5 {
+  grid-area: 4/2/5/6;
+}
+
+.div6 {
+  grid-area: 5/2/6/6;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=style.css.map */

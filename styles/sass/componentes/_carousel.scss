@@ -1,0 +1,26 @@
+
+
+/* INICIO ARTICLE CAROUSEL */
+article{
+    margin: 12rem auto;
+    .kCarouselContainer{
+        background-color:var(--colorFondoP);
+        border-radius: 1rem;
+        margin: 10 rem auto;
+        img{
+            margin: 1rem auto;
+            border-radius: 1rem;
+        }
+        H3{
+            color: var(--colorEnlaces);
+            text-align: center;
+            margin: 1rem auto;
+        }
+        .kParrafoContainer{
+            color:var(--color2);
+            font-weight:lighter;
+            margin: 2rem 1rem;
+        }
+    }
+}
+/* FIN CAROUSEL / TIERRA */

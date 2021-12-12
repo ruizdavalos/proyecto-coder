@@ -1,0 +1,27 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    max-width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Irish+Grover&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+
+:root{
+    --colorEnlaces: #ffff00;
+    --color2: rgb(182, 245, 10);
+    --color3:#404047 ;
+    --colorFondoP: #404047b0 ;
+    --fontsXs:0.8rem;
+    --fontsLow: 1rem;
+    --fontsMediun:1.2rem;
+    --fontsHigh:1.6rem;
+    --hoverEnlaces: bolder;
+    --fontFamily:'Irish Grover', cursive;
+    --fontFamilyT:'Libre Baskerville', serif;
+    --colorBujia: #2d3323ab;
+}
