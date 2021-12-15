@@ -1,7 +1,7 @@
 /* Creando grid */
 
 
-.parent {
+/* .parent {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -45,3 +45,38 @@ color: white;
     gap: 10px;
     flex-wrap: wrap;
     }
+ */
+.parent {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+}
+        
+.div1 { grid-area: 2 / 2 / 3 / 3; 
+    border: 5px solid black;
+    height: 200px;
+    max-width: 80%;
+    gap: 2rem;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    background: #0c0b0b;
+    opacity: 0.8;
+    padding: 20px 0px;
+}
+.div2 { grid-area: 2 / 3 / 3 / 4; 
+    border: 5px solid black;
+    height: 200px;
+    max-width: 80%;
+    gap: 2rem;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    background: #0c0b0b;
+    opacity: 0.8;
+    padding: 20px 0px;}
+.div3 { grid-area: 2 / 4 / 3 / 5; }
+.div4 { grid-area: 3 / 1 / 6 / 2; }
+.div5 { grid-area: 3 / 2 / 4 / 6; }
+.div6 { grid-area: 4 / 2 / 5 / 6; }
+.div7 { grid-area: 5 / 2 / 6 / 6; }
