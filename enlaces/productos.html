@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Macetas, Decoraciones, Jardineria, Plantas, Cesped, Vivero">
     <meta name="description" content="Todos los productos de jardinería y hogar que necesitas.">
-    
+    <!--Key Fontawesome-->
+    <script src="https://kit.fontawesome.com/440f7ba35a.js" crossorigin="anonymous"></script>
     <title>Macetas y Decoracion | Productos</title>
     <!-- SASS -->
     <link rel="stylesheet" href="../styles/css/style.css">
@@ -18,7 +19,7 @@
 </head>
 <body id="bodyProductos">
     <!-- HEADER -->
-    <header class="headerContainer">
+    <header class="headerContainer headerProductos">
         <h1>Macetas y Decoración</h1>
 
         <div class="boxContainer">
@@ -28,204 +29,186 @@
 
         <nav class="navContainer">
             <ul>
-                <a href="../index.html">     HOME</a>
-                <a href="#">PRODUCTOS</a> 
+                <a href="../index.html">HOME</a>
+                <a href="productos.html">PRODUCTOS</a> 
                 <a href="destacados.html">DESTACADOS</a>
                 <a href="novedades.html">NOVEDADES</a>
-                <a href="contacto.html">CONTACTO</a>  
-
+                <a href="contactos.html">CONTACTO</a>  
             </ul>
         </nav>
-
     </header>
-    </header>
-    <menu>
-        <section>
-
-
-            
-            <div class="parent">
-                <div class="div1"> 
-                    <div class="span2">
-                        <div class="service-icon svg-icon-text d-inline-block  m-right-half m-none-xs m-bottom-half-xs">
+    <section class="relative">
+        <div class="containerProductos">
+                <section class="banner">
+                    <div class="vertical">
+                        <div class="span2">
+                            <i class="far fa-credit-card"></i>
+                        </div>
+                        <div class="bannerTitle">
+                            <strong>Pagá como quieras</strong></h6>
+                            <p>Tarjetas de crédito o efectivo</p>
                         </div>
                     </div>
-                    <div>
-                        <h6 class="titulo"><strong>Enviamos tu compra</strong></h6>
-                        <p>Entregas a todo el país</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="div2"> 
-                    <div class="span2">
-                        <div class="service-icon svg-icon-text d-inline-block  m-right-half m-none-xs m-bottom-half-xs">
+                    <div class="vertical">
+                        <div class="span2">
+                            <i class="fas fa-lock"></i>            		    
+                        </div>
+                        <div class="bannerTitle">
+                            <strong>Enviamos tu compra</strong></h6>
+                            <p>Entregas a todo el país</p>
                         </div>
                     </div>
-                    <div>
-                        <h6 class="titulo"><strong>Pagá como quieras</strong></h6>
-                        <p>Entregas a todo el país</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="div3"> 
-                    <div class="span2">
-                        <div class="service-icon svg-icon-text d-inline-block  m-right-half m-none-xs m-bottom-half-xs">
+                    <div class="vertical">
+                        <div class="span2">
+                            <i class="fas fa-truck"></i>             		    
+                        </div>
+                        <div class="bannerTitle">
+                            <strong>Comprá con seguridad</strong></h6>
+                            <p>Tus datos siempre protegidos</p>
                         </div>
                     </div>
-                    <div>
-                        <h6 class="titulo"><strong>Pagá como quieras</strong></h6>
-                        <p>Entregas a todo el país</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="div4"> 
-                    <h1>Inicio <hr></h1>
-                </div>
-                <div class="div5"> 
-                    <div class="card" style="width: 14rem;">
-                        <img src="../img/decoracion/imagenOrganica.jpg" class="card-img-top" alt="plantas">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="div6"> 
-                    <div class="card" style="width: 14rem;">
-                        <img src="../img/decoracion/imagenOrganica.jpg" class="card-img-top" alt="plantas">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="div7"> 
-                    <div class="card" style="width: 14rem;">
-                        <img src="../img/decoracion/imagenOrganica.jpg" class="card-img-top" alt="plantas">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- <div class="parent">
+                </section>
+                <form class="formulario">
+                    form
+                    <select class="form-select js-sort-by  "  aria-label="Ordenar por:">
+                    <option value="price-ascending" >Precio: Menor a Mayor</option>
+                        <option value="price-descending" >Precio: Mayor a Menor</option>
+                        <option value="alpha-ascending" >A - Z</option>
+                        <option value="alpha-descending" >Z - A</option>
+                        <option value="created-descending" >Más Nuevo al más Viejo</option>
+                        <option value="created-ascending" >Más Viejo al más Nuevo</option>
+                        <option value="best-selling" selected>Más Vendidos</option>
+                </select>
+                </form>
                 <div class="div1">
-
+                    <div class="box">
+                        <div class="card" >
+                            <img src="https://i.ibb.co/TtFqGjW/Whats-App-Image-2020-10-05-at-13-06-08-2.jpg" class="card-img-top" alt="plantas">
+                            <div class="card-body">
+                                <h5 class="card-title">Titulo</h5>
+                                <p class="card-text">Maceta cono moderno 80x43 impermeabilizada y pintada.</p>
+                                <button type="submit" class="button">Comprar ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="card">
+                            <img src="https://i.ibb.co/XLz3HjY/Whats-App-Image-2020-10-05-at-13-06-02-1.jpg" class="card-img-top" alt="plantas">
+                            <div class="card-body">
+                                <h5 class="card-title">Titulo</h5>
+                                <p class="card-text">1 Maceta Floridis Amsterdam 27 cm × 28 cm
+                                    - Material: polietileno de alta densidad</p>
+                                <button type="submit" class="button">Comprar ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="card" >
+                            <img src="https://i.ibb.co/FgMrc3Z/Whats-App-Image-2020-10-05-at-13-06-01-2.jpg" class="card-img-top" alt="plantas">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <button type="submit" class="button">Comprar ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="card" >
+                            <img src="./imagenes macetas/WhatsApp Image 2020-10-01 at 18.26.34.jpeg" class="card-img-top" alt="plantas">
+                            <div class="card-body">
+                                <h5 class="card-title">Titulo</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <button type="submit" class="button">Comprar ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="card">
+                            <img src="./imagenes macetas/WhatsApp Image 2020-10-05 at 13.05.34.jpeg" class="card-img-top" alt="plantas">
+                            <div class="card-body">
+                                <h5 class="card-title">Titulo</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <button type="submit" class="button">Comprar ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="card" >
+                            <img src="./imagenes macetas/WhatsApp Image 2020-10-05 at 13.05.35 (2).jpeg" class="card-img-top" alt="plantas">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <button type="submit" class="button">Comprar ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="card" >
+                            <img src="./imagenes macetas/WhatsApp Image 2020-10-05 at 13.05.35 (2).jpeg" class="card-img-top" alt="plantas">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <button type="submit" class="button">Comprar ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="card" >
+                            <img src="./imagenes macetas/WhatsApp Image 2020-10-05 at 13.05.35 (2).jpeg" class="card-img-top" alt="plantas">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <button type="submit" class="button">Comprar ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="card" >
+                            <img src="./imagenes macetas/WhatsApp Image 2020-10-05 at 13.05.35 (2).jpeg" class="card-img-top" alt="plantas">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <button type="submit" class="button">Comprar ahora</a>
+                            </div>
+                        </div>
+                    </div>
                     
-                    
                 </div>
-                <div class="div2"> 
-                    <h1>Inicio <hr></h1>
-
-
-                </div>
-                <div class="div3"> 
-                    <div class="card" style="width: 14rem;">
-                        <img src="../img/decoracion/imagenOrganica.jpg" class="card-img-top" alt="plantas">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 14rem;">
-                        <img src="../img/decoracion/imagenOrganica.jpg" class="card-img-top" alt="plantas">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 14rem;">
-                        <img src="../img/decoracion/imagenOrganica.jpg" class="card-img-top" alt="plantas">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="div4"> 
-                    <div class="card" style="width: 18rem;">
-                        <img src="../img/decoracion/imagenOrganica.jpg" class="card-img-top" alt="plantas">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="div5"> 
-                    <div class="card" style="width: 18rem;">
-                        <img src="../img/decoracion/imagenOrganica.jpg" class="card-img-top" alt="plantas">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="div6"> 
-                    <div class="card" style="width: 18rem;">
-                        <img src="../img/decoracion/imagenOrganica.jpg" class="card-img-top" alt="plantas">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 18rem;">
-                        <img src="../img/decoracion/imagenOrganica.jpg" class="card-img-top" alt="plantas">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-        </section>    
-        
-    </menu>
-
-    <footer data-aos="fade-up" data-aos-duration="300">
+        </div>
+    </section>
+    <footer data-aos="fade-up"
+    data-aos-duration="300">
 
         <div class="container">
             <div class="row">
-                <div class="col order-first" >
-                    <h3 class="kk">Contactanos</h3><hr>
-                    <p>Whatsapp<img src="../img/iconos/whatsappp.png">1534268975</p>
-                    <p>Ventas<img src="../img/iconos/@.png">proyecto-macetas.com.ar</p>
-                    <p>Consultas<img src="../img/iconos/@.png">jr.com</p>
-                    <p>Facebook <img src="../img/iconos/facebook.png">  Facebook</p>
-                    <p>Instagram<img src="../img/iconos/instagram.png">  Instagram</p>
-                </div>
-
-                <div class="col">
+            <div class="col order-first" >
+                <h3 class="kk">Contactanos</h3><hr>
+                <p>Whatsapp<img src="../img/iconos/whatsappp.png">15 -24268975</p>
+                <p>Ventas<img src="../img/iconos/@.png">proyecto-macetas.com.ar</p>
+                <p>Consultas<img src="../img/iconos/@.png">jr.com</p>
+                <p>Facebook <img src="../img/iconos/facebook.png">  Facebook</p>
+                <p>Instagram<img src="../img/iconos/instagram.png">  Instagram</p>
+            </div>
+            <div class="col">
                 <h3>Proyecto-Macetas</h3><hr>
-                    <p><img src="../img/iconos/home-outline.png"><a href="../index.html"> Home </a> </p>
-                    <p><img src="../img/iconos/empresa.png"> La empresa</p>
-                    <p><img src="../img/iconos/google-maps.png"> <a href="https://goo.gl/maps/N7qogUCc5aDKr7MN9"> Sucursales</a></p>
-                    <p><img src="../img/iconos/email-fast-outline.png"> Envios</p>
-                </div>
-
-                <div class="col order-last">
-                    <h3>Productos</h3><hr>
-                    <p>Macestas Decorativas</p>
-                    <p>Tierra Organica</p>
-                    <p>Pesticidas</p>
-                    <p>Cesped</p>
-                </div>
+                <p><img src="../img/iconos/home-outline.png"><a href="index.html"> Home </a> </p>
+                <p><img src="../img/iconos/empresa.png"> La empresa</p>
+                <p><img src="../img/iconos/google-maps.png"> <a href="https://goo.gl/maps/N7qogUCc5aDKr7MN9"> Sucursales</a></p>
+                <p><img src="../img/iconos/email-fast-outline.png"> Envios</p>
+            </div>
+            <div class="col order-last">
+                <h3>Productos</h3><hr>
+                <p>Macestas Decorativas</p>
+                <p>Tierra Organica</p>
+                <p>Pesticidas</p>
+                <p>Cesped</p>
+            </div>
             </div>
         </div>
+        </div>
+
     </footer>
+
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
