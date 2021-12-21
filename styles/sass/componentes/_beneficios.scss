@@ -1,0 +1,88 @@
+/* SECTION BANEFICIOS */
+
+.beneficiosContainer{
+    display: grid;
+    grid-template-areas:
+    "parrafos parrafos parrafos parrafos"
+    "foto-1 foto-2 foto-3 foto-4";
+    margin: 5rem auto 10rem auto;
+    width: 95% ;
+    column-gap: 1rem;
+    @media only screen and (max-width:768px){
+        display:block;
+    }
+}
+
+.parrafos{
+    grid-area: parrafos;
+    background-color:var(--color3);
+    padding: 2rem 0;
+    h3{
+        text-align: center;
+        color: var(--colorEnlaces);
+    }
+    div{
+        display: flex;
+        justify-content:space-evenly;
+        ul{
+            li{
+                color: var(--colorEnlaces);
+                font-size: var(--fontsMediun);
+            }
+        }
+    }
+}
+
+.foto-1{
+    grid-area: foto-1;
+    @media only screen and(max-width: 768px){
+        margin: 0.5rem auto;
+    }
+    .card{
+        img{
+            width: auto;
+            height: 45vh;
+        }
+    }
+
+}
+.foto-2{
+    grid-area: foto-2;
+    @media only screen and(max-width: 768px){
+        margin: 0.5rem auto;
+    }
+    .card{
+        img{
+            width: auto;
+            height: 45vh;
+        }
+    }
+
+}
+.foto-3{
+    grid-area: foto-3;
+    @media only screen and(max-width: 768px){
+        margin: 0.5rem auto;
+    }
+    .card{
+        img{
+            width: auto;
+            height: 45vh;
+        }
+
+    }
+
+}
+.foto-4{
+    grid-area: foto-4;
+    @media only screen and(max-width: 768px){
+        margin: 0.5rem auto;
+    }
+    .card{
+        img{
+            width: auto;
+            height: 45vh;
+        }
+    }
+}
+
