@@ -1,0 +1,182 @@
+
+/* SECTION BANEFICIOS */
+
+.beneficiosContainer{
+    display: grid;
+    grid-template-areas:
+    "parrafos parrafos parrafos parrafos"
+    "foto-1 foto-2 foto-3 foto-4";
+    margin: 5rem auto 10rem auto;
+    width: 95% ;
+    column-gap: 1rem;
+    @media only screen and (max-width:768px){
+        display:block;
+    }
+}
+
+.parrafos{
+    grid-area: parrafos;
+    background-color:var(--color3);
+    padding: 2rem 0;
+    h3{
+        text-align: center;
+        color: var(--colorEnlaces);
+    }
+    div{
+        display: flex;
+        justify-content:space-evenly;
+        ul{
+            li{
+                color: var(--colorEnlaces);
+                font-size: var(--fontsMediun);
+            }
+        }
+    }
+}
+
+.foto-1{
+    grid-area: foto-1;
+    background-color: #fff;
+    height: 90vh;
+    @media only screen and(max-width: 768px){
+        margin: 0.5rem auto;
+    }
+    .card{
+        img{
+            width: auto;
+            height: 45vh;
+        }
+        .card-body{
+            height: 50vh;
+
+        }
+        .btn{
+            width: 100%;
+            position: absolute;
+            bottom: 3rem;
+            left: 0;
+            &:hover{
+                background: #001e2d;
+            }
+        }
+        .card-text{
+            font-size: var(--fontsMediun);
+            @media only screen and(max-width:1440px){
+                font-size: var(--fontsXs);
+            }
+        }
+    }
+}
+.foto-2{
+    background-color: #fff;
+    grid-area: foto-2;
+    height: 90vh;
+    @media only screen and(max-width: 768px){
+        margin: 3rem auto;
+    }
+    .card{
+        img{
+            width: auto;
+            height: 45vh;
+        }
+        .card-body{
+            height: 50vh;
+        }
+        .btn{
+            // opacity: 0;
+            width: 100%;
+            // padding: 10rem;
+            position: absolute;
+            bottom: 3rem;
+            left: 0;
+            &:hover{
+                // transform: translateY(60px);
+                // transition: all 0.5s linear;
+                // padding: 1rem;
+                background: #001e2d;
+            }
+        }
+        .card-text{
+            font-size: var(--fontsMediun);
+            @media only screen and(max-width:1440px){
+                font-size: var(--fontsXs);
+            }
+        }
+    }
+
+}
+.foto-3{
+    background-color: #fff;
+    grid-area: foto-3;
+    height: 90vh;
+    @media only screen and(max-width: 768px){
+        margin: 3rem auto;
+    }
+    .card{
+        img{
+            width: auto;
+            height: 45vh;
+        }
+        .card-body{
+            height: 50vh;
+        }
+        .btn{
+            // opacity: 0;
+            width: 100%;
+            // padding: 10rem;
+            position: absolute;
+            bottom: 3rem;
+            left: 0;
+            &:hover{
+                // transform: translateY(60px);
+                // transition: all 0.5s linear;
+                // padding: 1rem;
+                background: #001e2d;
+            }
+        }
+        .card-text{
+            font-size: var(--fontsMediun);
+            @media only screen and(max-width:1440px){
+                font-size: var(--fontsXs);
+            }
+        }
+    }
+}
+.foto-4{
+    background-color: #fff;
+    grid-area: foto-4;
+    height: 90vh;
+    @media only screen and(max-width: 768px){
+        margin: 3rem auto;
+    }
+    .card{
+        img{
+            width: auto;
+            height: 45vh;
+        }
+        .card-body{
+            height: 50vh;
+        }
+        .btn{
+            // opacity: 0;
+            width: 100%;
+            // padding: 10rem;
+            position: absolute;
+            bottom: 3rem;
+            left: 0;
+            &:hover{
+                // transform: translateY(60px);
+                // transition: all 0.5s linear;
+                // padding: 1rem;
+                background: #001e2d;
+            }
+        }
+        .card-text{
+            font-size: var(--fontsMediun);
+            @media only screen and(max-width:1440px){
+                font-size: var(--fontsXs);
+            }
+        }
+    }
+}
+

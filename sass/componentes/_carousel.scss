@@ -16,16 +16,24 @@ article{
             border-radius: 1rem;
         }
         H3{
-            color: var(--colorEnlaces);
+            color: var(--color2);
             text-align: center;
             margin: 1rem auto;
         }
     }
     .kParrafoContainer{
-        color:var(--color2);
-        font-weight:lighter;
         margin: 2rem auto;
         text-align: center;
+        p{
+            font-size: var(--fontsMediun);
+            color:var(--colorEnlaces);
+            font-weight: bolder;
+
+            @media only screen and(max-width:320px){
+                font-size: var(--fontsXs)
+            }
+            
+        }
     }
 }
 /* FIN CAROUSEL / TIERRA */

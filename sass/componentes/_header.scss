@@ -1,0 +1,90 @@
+
+@import '../base/variables';
+
+/* INICIO DEL HEADER */
+
+.headerContainerkk{
+    background-color: var(--color3);
+    width: 100%;
+    height: 10vh;
+    top: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 1;
+
+    .navContainerkk{
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        justify-content:space-between;
+
+        h1{
+            /* word-break: break-all;  para que bajen de a una las letras */
+            /* box-shadow: rgb(0 0 0 / 50%) 12px 15px 13px;  para darle sombras a las cajas*/
+            font-size:var(--fontsLow);
+            font-family: var(--fontFamily);
+            color: var(--colorEnlaces);
+            width: 50%;
+            padding: 0;
+            margin: auto;
+            text-align: center;
+            @media only screen and(max-width: 767px){
+                margin: 0 auto 0 0  ;
+            }
+            @media only screen and (max-width: 680px){
+                font-size: var(--fontsXs);
+                }
+        }
+        #check{
+            display: none;
+            &:checked ~ .navNav {
+                display: block;
+            }
+        }
+        .check{
+            display: none;  //este se puso ahora
+
+            @media only screen and(max-width:767px){
+                display: block;
+                margin: 0 10%;
+                height: 0;
+                cursor: pointer;
+            }
+            .fas{
+                color: #fff;
+            }
+        }
+        ul{
+            width: 100%;
+            top: 3.1rem;
+            left: 0rem;
+            margin: auto;
+            display: flex;
+            justify-content:space-evenly;
+
+            @media only screen and(max-width:767px){
+            display:none;
+            position:absolute;
+            text-align: center;
+            height: 60vh;
+            background-color: rgba(0, 0, 0, .70);
+            }
+
+            li{
+                list-style: none;
+                @media only screen and(max-width:767px){
+                    line-height: 4rem;
+                }
+            }
+            a{
+                color: var(--color2);
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+/*FIN DE HEADER */
+

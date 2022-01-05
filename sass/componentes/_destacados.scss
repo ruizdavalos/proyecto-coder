@@ -1,0 +1,46 @@
+
+#bodyDestacados{
+    background-image:radial-gradient( circle at 50% 50%, rgb(191, 230, 222) 0.1%, rgba(11, 59, 53, 0.726) 100% );
+    margin: auto;
+}
+
+main
+{
+    .menuDestacados
+    {
+        .foto-1
+        {
+            background-color: #fff;
+            height: 10vh;
+            @media only screen and(max-width: 768px){
+                margin: 0.5rem auto;
+            }
+            .card{
+                img{
+                    width: auto;
+                    height: 45vh;
+                }
+                .card-body{
+                    height: 50vh;
+        
+                }
+                .btn{
+                    width: 100%;
+                    position: absolute;
+                    bottom: 3rem;
+                    left: 0;
+                    &:hover{
+                        background: #001e2d;
+                    }
+                }
+                .card-text{
+                    font-size: var(--fontsMediun);
+                    @media only screen and(max-width:1440px){
+                        font-size: var(--fontsXs);
+                    }
+                }
+            }
+        }
+    }
+
+    }

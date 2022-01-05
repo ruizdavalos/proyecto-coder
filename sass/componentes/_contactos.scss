@@ -1,0 +1,157 @@
+
+
+
+//  INICIO CONTACTOS
+// °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+#bodiContactos{
+    background-image:radial-gradient( circle at 50% 50%, rgb(191, 230, 222) 0.1%, rgba(11, 59, 53, 0.726) 100% );
+    #mainContactos{
+        margin: 1rem auto;
+
+        .contactosContainer{
+            display: grid;
+            grid-template-areas: 
+            "h1 h1 h1 h1" 
+            "p p p p"
+            "form form form direcContainer"
+            ;
+            width: 80%;
+            margin: auto;
+            border: solid 2px #fff;
+            color: #fff;
+            background: rgb(27, 60, 80);
+            h1{
+                grid-area: h1;
+                text-align: center;
+                width: 100%;
+                padding: 2rem;
+            }
+            p{
+                grid-area: p;
+                padding: 1.5rem;
+                font-size: var(--fontsHigh);
+                @media screen and(max-width: 320px){
+                    font-size: var(--fontsXs);
+                }
+            }
+    
+            @media screen and(max-width: 768px){
+                display: flex;
+                flex-wrap: wrap;
+            }
+    
+            form{
+                grid-area: form;
+                width: 100%;
+                margin: 0 auto;
+                background: #f8f8f8;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+            
+                .nombre{
+                    width: 50%;
+                    background: #f8f8f8;
+                    &:hover{
+                        background: rgb(163, 235, 213);
+                    }
+                }
+                .whatsappForm{
+                    width: 50%;
+                    background: #f8f8f8 ;
+                    &:hover{
+                        background: rgb(163, 235, 213);
+                    }
+                }
+                .email{
+                    width: 50%;
+                    background: #f8f8f8;
+                    &:hover{
+                        background: rgb(163, 235, 213);
+                    }
+                }
+                .telefono{
+                    width: 50%;
+                    background: #f8f8f8;
+                    &:hover{
+                        background: rgb(163, 235, 213);
+                    }
+                }
+                .asunto{
+                    width: 100%;
+                    background: #f8f8f8;
+                    &:hover{
+                        background: rgb(163, 235, 213);
+                    }
+                }
+                .mensaje{
+                    width: 100%;
+                    padding: 6rem;
+                    background: #f8f8f8;
+                    &:hover{
+                        background: rgb(163, 235, 213);
+                    }
+                    @media screen and(max-width: 320px){
+                        padding: 3rem;
+                        margin: 1rem auto;
+                        width: auto;
+                        font-size: var(--fontsXs);
+                    }
+                }
+                .boton{
+                    width: 15%;
+                    @media screen and(max-width: 320px){
+                        margin: 1rem;
+                        width: auto;
+                        font-size: var(--fontsXs);
+                    }
+            
+                }
+            }
+    
+            .direcContainer{
+    
+                grid-area: direcContainer;
+                border: solid 2px gray;
+                width: 100%;
+                padding: 2rem;
+                div{
+                    
+                    @media screen and(max-width: 320px){
+                        border: solid 2px gray;
+                        margin: 1rem auto;
+                        width: auto;
+                        font-size: var(--fontsXs);
+                    }
+                    @media screen and(max-width: 768px){
+                        border: solid 2px gray;
+                        margin: 1rem auto;
+                        width: auto;
+                    }
+                    
+                    h4{
+                        padding: 1rem;
+                    }
+                    p{
+                        text-align: center;
+                        color: coral;
+                        box-sizing: content-box;
+                        font-size: var(--fontsMediun);
+                        @media screen and(max-width: 320px){
+            
+                            margin: 1rem auto;
+                            font-size: var(--fontsXs);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+

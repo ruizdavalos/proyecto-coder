@@ -1,0 +1,49 @@
+
+/* Inicio Main */
+
+.iconoMovil{
+    background-image: url(https://i.ibb.co/PQjYd6h/favicon-16x16.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 3vh;
+
+    animation: movimiento 10s infinite linear alternate;
+    @keyframes movimiento{
+        from{
+            background-position: bottom left;
+        }to{
+            background-position: top right;
+        }
+    }
+}
+
+.containerImg{
+    img{
+        background-position: center center;
+        width: 100%;
+        border-radius: 0 0 1rem 1rem;
+        margin: 0rem 0 10rem 0;
+        @media only screen and(max-width: 768px){
+            margin: 2rem auto 2rem auto;
+        }
+    }
+}
+
+ /* INICIO TITULO DESCARGA */
+    
+.descargasContainer{
+    display: flex;
+    justify-content: center;
+     a{
+        color: var(--colorEnlaces);
+        font-size: var(--fontsMediun);
+        font-weight: bolder;
+        @media only screen and (max-width:580px){
+            font-size: var(--fontsLow);
+        }
+    }
+}
+ /* FIN TITULO DESCARGA */
+ /* FIN MAIN */
+
