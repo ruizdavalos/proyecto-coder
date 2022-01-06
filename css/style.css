@@ -171,6 +171,7 @@ body .whatsapp:hover {
 }
 
 .menuDestacado {
+  margin: 20vh auto;
   margin-top: 5rem;
 }
 .menuDestacado .bannerDestacado {
@@ -549,6 +550,9 @@ footer .container .row .col p a {
   margin: auto;
 }
 
+main {
+  margin: 20vh auto;
+}
 main section .containerProductos {
   background-color: #eaeded;
   width: 95%;
@@ -570,7 +574,7 @@ main section .containerProductos .banner {
   align-items: center;
   margin-top: 0px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 760px) {
   main section .containerProductos .banner {
     display: none;
   }
@@ -593,7 +597,7 @@ main section .containerProductos .formulario {
   grid-column: span 2;
   width: 80%;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 760px) {
   main section .containerProductos .formulario {
     display: none;
   }
@@ -607,7 +611,7 @@ main section .containerProductos .div1 {
   margin-right: 15px;
   flex-wrap: wrap;
 }
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 760px) {
   main section .containerProductos .div1 {
     margin: 0px;
     padding: 0px;
@@ -628,11 +632,10 @@ main section .containerProductos .div1 .box {
   margin-left: 20px;
   flex: 0 30%;
 }
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 760px) {
   main section .containerProductos .div1 .box {
     gap: 10em;
     flex: 100%;
-    margin-top: 0px;
     margin-left: 0px;
   }
 }
