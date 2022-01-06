@@ -65,7 +65,7 @@
   display: flex;
   flex-wrap: wrap;
   position: fixed;
-  z-index: 1;
+  z-index: 30000;
 }
 .headerContainerkk .navContainerkk {
   width: 100%;
@@ -169,92 +169,96 @@ body .whatsapp:hover {
   background-image: radial-gradient(circle at 50% 50%, #bfe6de 0.1%, rgba(11, 59, 53, 0.726) 100%);
   margin: auto;
 }
-#bodyDestacados .headerContainerkk {
-  background-color: var(--color3);
-  width: 100%;
-  height: 10vh;
-  top: 0;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  position: fixed;
-  z-index: 1;
+
+.menuDestacado {
+  margin-top: 5rem;
 }
-#bodyDestacados .headerContainerkk .navContainerkk {
-  width: 100%;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
+.menuDestacado .bannerDestacado {
+  margin-top: 10rem;
+  align-items: center;
+  position: relative;
+  justify-content: center;
 }
-#bodyDestacados .headerContainerkk .navContainerkk h1 {
-  /* word-break: break-all;  para que bajen de a una las letras */
-  /* box-shadow: rgb(0 0 0 / 50%) 12px 15px 13px;  para darle sombras a las cajas*/
-  font-size: var(--fontsLow);
-  font-family: var(--fontFamily);
-  color: var(--colorEnlaces);
-  width: 50%;
-  padding: 0;
-  margin: auto;
+.menuDestacado .bannerDestacado .bannerTitulo {
+  background-image: url("/img/Banner.jpg");
+  font-size: 70px;
+  font-weight: 700;
+  color: white;
+  padding: 2rem auto;
+  justify-self: center;
   text-align: center;
 }
-@media only screen and (max-width: 767px) {
-  #bodyDestacados .headerContainerkk .navContainerkk h1 {
-    margin: 0 auto 0 0;
+@media only screen and (max-width: 720px) {
+  .menuDestacado .bannerDestacado {
+    margin-top: 5rem;
   }
 }
-@media only screen and (max-width: 680px) {
-  #bodyDestacados .headerContainerkk .navContainerkk h1 {
-    font-size: var(--fontsXs);
-  }
-}
-#bodyDestacados .headerContainerkk .navContainerkk #check {
-  display: none;
-}
-#bodyDestacados .headerContainerkk .navContainerkk #check:checked ~ .navNav {
-  display: block;
-}
-#bodyDestacados .headerContainerkk .navContainerkk .check {
-  display: none;
-}
-@media only screen and (max-width: 767px) {
-  #bodyDestacados .headerContainerkk .navContainerkk .check {
-    display: block;
-    margin: 0 10%;
-    height: 0;
-    cursor: pointer;
-  }
-}
-#bodyDestacados .headerContainerkk .navContainerkk .check .fas {
-  color: #fff;
-}
-#bodyDestacados .headerContainerkk .navContainerkk ul {
-  width: 100%;
-  top: 3.1rem;
-  left: 0rem;
-  margin: auto;
+.menuDestacado .menuImagenes {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
 }
-@media only screen and (max-width: 767px) {
-  #bodyDestacados .headerContainerkk .navContainerkk ul {
-    display: none;
-    position: absolute;
-    text-align: center;
-    height: 60vh;
-    background-color: rgba(0, 0, 0, 0.7);
+.menuDestacado .menuImagenes .box {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 0;
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 300px;
+  border: 2px solid green;
+  height: auto;
+}
+@media only screen and (max-width: 720px) {
+  .menuDestacado .menuImagenes .box {
+    gap: 10em;
+    margin-top: 0px;
+    margin-bottom: 1rem;
   }
 }
-#bodyDestacados .headerContainerkk .navContainerkk ul li {
-  list-style: none;
+.menuDestacado .menuImagenes .box .card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
 }
-@media only screen and (max-width: 767px) {
-  #bodyDestacados .headerContainerkk .navContainerkk ul li {
-    line-height: 4rem;
-  }
+.menuDestacado .menuImagenes .box .card div {
+  width: 500px;
 }
-#bodyDestacados .headerContainerkk .navContainerkk ul a {
-  color: var(--color2);
-  text-decoration: none;
+.menuDestacado .menuImagenes .box .card div .card-text {
+  box-sizing: border-box;
+}
+.menuDestacado .menuImagenes .box .card div .btn .btnComprar, .menuDestacado .menuImagenes .box .card div .btn .btnProximamente {
+  display: block;
+  background-color: #3483fa;
+  border-color: transparent;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 8px;
+}
+.menuDestacado .menuImagenes .box .card div .btn .btnProximamente {
+  display: none;
+}
+.menuDestacado .menuImagenes .box .card div .btn:hover .btnComprar {
+  display: none;
+}
+.menuDestacado .menuImagenes .box .card div .btn:hover .btnProximamente {
+  display: block;
+  background-color: red;
+}
+.menuDestacado .menuImagenes .box:hover {
+  box-shadow: 1px 1px 10px 1px #868181;
+  transition-duration: 0.5s;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+  z-index: 1;
 }
 
 /* Inicio Main */
@@ -544,93 +548,6 @@ footer .container .row .col p a {
   background-image: radial-gradient(circle at 50% 50%, #bfe6de 0.1%, rgba(11, 59, 53, 0.726) 100%);
   margin: auto;
 }
-#bodyProductos .headerContainerkk {
-  background-color: var(--color3);
-  width: 100%;
-  height: 10vh;
-  top: 0;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  position: fixed;
-  z-index: 1;
-}
-#bodyProductos .headerContainerkk .navContainerkk {
-  width: 100%;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-}
-#bodyProductos .headerContainerkk .navContainerkk h1 {
-  /* word-break: break-all;  para que bajen de a una las letras */
-  /* box-shadow: rgb(0 0 0 / 50%) 12px 15px 13px;  para darle sombras a las cajas*/
-  font-size: var(--fontsLow);
-  font-family: var(--fontFamily);
-  color: var(--colorEnlaces);
-  width: 50%;
-  padding: 0;
-  margin: auto;
-  text-align: center;
-}
-@media only screen and (max-width: 767px) {
-  #bodyProductos .headerContainerkk .navContainerkk h1 {
-    margin: 0 auto 0 0;
-  }
-}
-@media only screen and (max-width: 680px) {
-  #bodyProductos .headerContainerkk .navContainerkk h1 {
-    font-size: var(--fontsXs);
-  }
-}
-#bodyProductos .headerContainerkk .navContainerkk #check {
-  display: none;
-}
-#bodyProductos .headerContainerkk .navContainerkk #check:checked ~ .navNav {
-  display: block;
-}
-#bodyProductos .headerContainerkk .navContainerkk .check {
-  display: none;
-}
-@media only screen and (max-width: 767px) {
-  #bodyProductos .headerContainerkk .navContainerkk .check {
-    display: block;
-    margin: 0 10%;
-    height: 0;
-    cursor: pointer;
-  }
-}
-#bodyProductos .headerContainerkk .navContainerkk .check .fas {
-  color: #fff;
-}
-#bodyProductos .headerContainerkk .navContainerkk ul {
-  width: 100%;
-  top: 3.1rem;
-  left: 0rem;
-  margin: auto;
-  display: flex;
-  justify-content: space-evenly;
-}
-@media only screen and (max-width: 767px) {
-  #bodyProductos .headerContainerkk .navContainerkk ul {
-    display: none;
-    position: absolute;
-    text-align: center;
-    height: 60vh;
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-}
-#bodyProductos .headerContainerkk .navContainerkk ul li {
-  list-style: none;
-}
-@media only screen and (max-width: 767px) {
-  #bodyProductos .headerContainerkk .navContainerkk ul li {
-    line-height: 4rem;
-  }
-}
-#bodyProductos .headerContainerkk .navContainerkk ul a {
-  color: var(--color2);
-  text-decoration: none;
-}
 
 main section .containerProductos {
   background-color: #eaeded;
@@ -653,7 +570,7 @@ main section .containerProductos .banner {
   align-items: center;
   margin-top: 0px;
 }
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 767px) {
   main section .containerProductos .banner {
     display: none;
   }
@@ -676,7 +593,7 @@ main section .containerProductos .formulario {
   grid-column: span 2;
   width: 80%;
 }
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 900px) {
   main section .containerProductos .formulario {
     display: none;
   }
@@ -753,99 +670,12 @@ main section .containerProductos .div1 .box:hover {
   background-image: radial-gradient(circle at 50% 50%, #bfe6de 0.1%, rgba(11, 59, 53, 0.726) 100%);
 }
 #bodiContactos #mainContactos {
-  margin: 40vh auto;
+  margin: 20vh auto;
 }
-@media screen and (max-width: 1024px) and (min-width: 768px) {
+@media screen and (min-width: 720px) {
   #bodiContactos #mainContactos {
-    margin: 80vh auto;
+    margin: 15vh auto;
   }
-}
-#bodiContactos #mainContactos .headerContainerkk {
-  background-color: var(--color3);
-  width: 100%;
-  height: 10vh;
-  top: 0;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  position: fixed;
-  z-index: 1;
-}
-#bodiContactos #mainContactos .headerContainerkk .navContainerkk {
-  width: 100%;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-}
-#bodiContactos #mainContactos .headerContainerkk .navContainerkk h1 {
-  /* word-break: break-all;  para que bajen de a una las letras */
-  /* box-shadow: rgb(0 0 0 / 50%) 12px 15px 13px;  para darle sombras a las cajas*/
-  font-size: var(--fontsLow);
-  font-family: var(--fontFamily);
-  color: var(--colorEnlaces);
-  width: 50%;
-  padding: 0;
-  margin: auto;
-  text-align: center;
-}
-@media only screen and (max-width: 767px) {
-  #bodiContactos #mainContactos .headerContainerkk .navContainerkk h1 {
-    margin: 0 auto 0 0;
-  }
-}
-@media only screen and (max-width: 680px) {
-  #bodiContactos #mainContactos .headerContainerkk .navContainerkk h1 {
-    font-size: var(--fontsXs);
-  }
-}
-#bodiContactos #mainContactos .headerContainerkk .navContainerkk #check {
-  display: none;
-}
-#bodiContactos #mainContactos .headerContainerkk .navContainerkk #check:checked ~ .navNav {
-  display: block;
-}
-#bodiContactos #mainContactos .headerContainerkk .navContainerkk .check {
-  display: none;
-}
-@media only screen and (max-width: 767px) {
-  #bodiContactos #mainContactos .headerContainerkk .navContainerkk .check {
-    display: block;
-    margin: 0 10%;
-    height: 0;
-    cursor: pointer;
-  }
-}
-#bodiContactos #mainContactos .headerContainerkk .navContainerkk .check .fas {
-  color: #fff;
-}
-#bodiContactos #mainContactos .headerContainerkk .navContainerkk ul {
-  width: 100%;
-  top: 3.1rem;
-  left: 0rem;
-  margin: auto;
-  display: flex;
-  justify-content: space-evenly;
-}
-@media only screen and (max-width: 767px) {
-  #bodiContactos #mainContactos .headerContainerkk .navContainerkk ul {
-    display: none;
-    position: absolute;
-    text-align: center;
-    height: 60vh;
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-}
-#bodiContactos #mainContactos .headerContainerkk .navContainerkk ul li {
-  list-style: none;
-}
-@media only screen and (max-width: 767px) {
-  #bodiContactos #mainContactos .headerContainerkk .navContainerkk ul li {
-    line-height: 4rem;
-  }
-}
-#bodiContactos #mainContactos .headerContainerkk .navContainerkk ul a {
-  color: var(--color2);
-  text-decoration: none;
 }
 #bodiContactos #mainContactos .contactosContainer {
   display: grid;
@@ -988,93 +818,6 @@ main section .containerProductos .div1 .box:hover {
 .bodyNovedades {
   background-image: radial-gradient(circle at 50% 50%, #bfe6de 0.1%, rgba(11, 59, 53, 0.726) 100%);
   margin: auto;
-}
-.bodyNovedades .headerContainerkk {
-  background-color: var(--color3);
-  width: 100%;
-  height: 10vh;
-  top: 0;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  position: fixed;
-  z-index: 1;
-}
-.bodyNovedades .headerContainerkk .navContainerkk {
-  width: 100%;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-}
-.bodyNovedades .headerContainerkk .navContainerkk h1 {
-  /* word-break: break-all;  para que bajen de a una las letras */
-  /* box-shadow: rgb(0 0 0 / 50%) 12px 15px 13px;  para darle sombras a las cajas*/
-  font-size: var(--fontsLow);
-  font-family: var(--fontFamily);
-  color: var(--colorEnlaces);
-  width: 50%;
-  padding: 0;
-  margin: auto;
-  text-align: center;
-}
-@media only screen and (max-width: 767px) {
-  .bodyNovedades .headerContainerkk .navContainerkk h1 {
-    margin: 0 auto 0 0;
-  }
-}
-@media only screen and (max-width: 680px) {
-  .bodyNovedades .headerContainerkk .navContainerkk h1 {
-    font-size: var(--fontsXs);
-  }
-}
-.bodyNovedades .headerContainerkk .navContainerkk #check {
-  display: none;
-}
-.bodyNovedades .headerContainerkk .navContainerkk #check:checked ~ .navNav {
-  display: block;
-}
-.bodyNovedades .headerContainerkk .navContainerkk .check {
-  display: none;
-}
-@media only screen and (max-width: 767px) {
-  .bodyNovedades .headerContainerkk .navContainerkk .check {
-    display: block;
-    margin: 0 10%;
-    height: 0;
-    cursor: pointer;
-  }
-}
-.bodyNovedades .headerContainerkk .navContainerkk .check .fas {
-  color: #fff;
-}
-.bodyNovedades .headerContainerkk .navContainerkk ul {
-  width: 100%;
-  top: 3.1rem;
-  left: 0rem;
-  margin: auto;
-  display: flex;
-  justify-content: space-evenly;
-}
-@media only screen and (max-width: 767px) {
-  .bodyNovedades .headerContainerkk .navContainerkk ul {
-    display: none;
-    position: absolute;
-    text-align: center;
-    height: 60vh;
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-}
-.bodyNovedades .headerContainerkk .navContainerkk ul li {
-  list-style: none;
-}
-@media only screen and (max-width: 767px) {
-  .bodyNovedades .headerContainerkk .navContainerkk ul li {
-    line-height: 4rem;
-  }
-}
-.bodyNovedades .headerContainerkk .navContainerkk ul a {
-  color: var(--color2);
-  text-decoration: none;
 }
 .bodyNovedades .novedadesContainer {
   display: grid;

@@ -6,10 +6,17 @@
 #bodiContactos{
     background-image:radial-gradient( circle at 50% 50%, rgb(191, 230, 222) 0.1%, rgba(11, 59, 53, 0.726) 100% );
     #mainContactos{
-        margin: 1rem auto;
+        margin: 20vh auto;
+        @media screen and (min-width:720px) {
+            margin: 15vh auto;
+        } 
 
+
+
+    // FIN HEADER
+    
         .contactosContainer{
-            display: grid;
+           display: grid;
             grid-template-areas: 
             "h1 h1 h1 h1" 
             "p p p p"
@@ -110,7 +117,7 @@
             }
     
             .direcContainer{
-    
+     
                 grid-area: direcContainer;
                 border: solid 2px gray;
                 width: 100%;

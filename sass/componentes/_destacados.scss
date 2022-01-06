@@ -4,43 +4,110 @@
     margin: auto;
 }
 
-main
+.menuDestacado
 {
-    .menuDestacados
+    .bannerDestacado
     {
-        .foto-1
+        margin-top: 10rem;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        .bannerTitulo
         {
-            background-color: #fff;
-            height: 10vh;
-            @media only screen and(max-width: 768px){
-                margin: 0.5rem auto;
-            }
-            .card{
-                img{
-                    width: auto;
-                    height: 45vh;
-                }
-                .card-body{
-                    height: 50vh;
-        
-                }
-                .btn{
-                    width: 100%;
-                    position: absolute;
-                    bottom: 3rem;
-                    left: 0;
-                    &:hover{
-                        background: #001e2d;
-                    }
-                }
-                .card-text{
-                    font-size: var(--fontsMediun);
-                    @media only screen and(max-width:1440px){
-                        font-size: var(--fontsXs);
-                    }
-                }
-            }
+            background-image: url("/img/Banner.jpg");
+            font-size: 70px;
+            font-weight: 700;
+            color: white;
+            padding: 2rem auto;
+            justify-self: center;
+            text-align: center;
         }
-    }
+        @media only screen and(max-width:720px){
+            margin-top: 5rem;
+            
+        }
 
     }
+    margin-top: 5rem;
+    .menuImagenes
+    {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        .box 
+        {
+            
+            box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 0;
+            margin-top: 10px;
+            margin-left: 20px;
+            width: 300px;
+            border: 2px solid green;
+            height: auto;
+            @media only screen and(max-width:720px){
+                gap: 10em;
+                margin-top: 0px;
+                margin-bottom: 1rem;
+                
+            }
+
+            .card
+            {
+                img
+                {
+                width: 100%;
+                height: 200px;
+                border-radius: 8px;
+                }
+                div {
+                    width: 500px;
+                    .card-text
+                    {
+                        box-sizing: border-box;
+                    }
+                    .btn
+                    {
+                    .btnComprar, .btnProximamente{
+                        display: block;
+                        background-color: #3483fa;
+                        border-color: transparent;
+                        color: #fff;
+                        border-radius: 8px;
+                        cursor: pointer;
+                        width: 100%;
+                        font-size: 16px;
+                        font-weight: 700;
+                        padding: 8px;
+                    }
+                    .btnProximamente{
+                        display: none;
+                    }
+                    &:hover{
+                        .btnComprar{
+                            display: none;
+                        }
+                        .btnProximamente{
+                            display: block;
+                            background-color: red;
+                        }
+                    }
+                    }
+                }
+            }
+            
+        }
+        .box:hover{
+            box-shadow: 1px 1px 10px 1px #868181;
+            transition-duration: 0.5s;
+            -webkit-transform:scale(1.05);
+            -moz-transform:scale(1.05);
+            -ms-transform:scale(1.05);
+            -o-transform:scale(1.05);
+            transform:scale(1.05);
+            z-index: 1;
+        }
+    }
+}
